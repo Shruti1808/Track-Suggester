@@ -2,6 +2,13 @@ body{
   font-family: sans-serif;
 
 }
+h1{
+  font-size: 40px;
+  color:#2aa1a8;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
 
 h2{
   font-size: 50px;
@@ -30,5 +37,5 @@ p{
   width:200px;
 }
 .question{
-  font-size: 15px;
+  font-size: 20px;
 }
