@@ -1,6 +1,11 @@
 .nav{
-  float:center;
+  float: right;
   max width:653px;
   max-height: 349px;
-  float: right;
+
+  ;
+}
+p{
+  font-size: 15px;
+  font-family: sans-serif;
 }

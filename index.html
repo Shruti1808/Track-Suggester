@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title> Epicodus Track Suggester</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <h1>Epicodus Track Suggester</h1>
-        <img src="img/epicodus.png" alt="picture of epicodus students" />
-        <form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail3">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="email">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword3">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-          <button type="submit" class="btn btn-default">Sign in</button>
-        </form>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title> Epicodus Track Suggester</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="navbar">
+      <h1>Epicodus Track Suggester</h1>
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail3">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword3">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
 
-      </div>
-      <h2>What Programming language should I learn ?</h2>
-      <p>
-        Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.
-        If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.
-        Currently, Epicodus offers the following tracks:
-    <ul>
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </form>
+      <img src="img/epicodus.png" alt="picture of epicodus students" />
+
+    </div>
+    <h2>What Programming language should I learn ?</h2>
+    <p>
+      Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.
+      If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.
+      Currently, Epicodus offers the following tracks:
+      <ul>
         <li>Ruby/Rails</li>
         <li>PHP/Drupal</li>
         <li>Java/Android</li>
         <li>CSS/Design</li>
         <li>C#/.NET</li>
-     </ul>
-     </p>
-     <p>
-       Let's take a quiz and find out :
-     </p>
+      </ul>
+    </p>
+    <h2>
+      Let's take a quiz and find out :
+    </h2>
 
-      <form name="quiz" method="post" name="buttons" id="quiz">
+    <form name="quiz" method="post" name="buttons" id="quiz">
 
-            <li><div class="question">Why do you want to learn to code?</div></li>
-            <input id="answer" type="radio" name="group1" value="text">Be a professional developer<br>
-            <input id="answer" type="radio" name="group1" value="text">Run startup<br>
-            <input id="answer" type="radio" name="group1" value="text">Build something fun<hr>
-            <input id="answer" type="radio" name="group1" value="text">Hvae another skill<hr>
+      <div class="question">Why do you want to learn to code?</div>
 
-
-            <li><div class="question">¿Quién es señor Dawes?</div></li>
-            <input id="answer" type="radio" name="group2" value="wrong">Un familia amigo<br>
-            <input id="answer" type="radio" name="group2" value="wrong">Un gato<br>
-            <input id="answer" type="radio" name="group2" value="correct">Un amable joven de la agencia de bienes raíces<hr>
-
-            <li><div class="question">¿Quién qué sus buscan?</div></li>
-            <input id="answer" type="radio" name="group3" value="wrong">Josh<br>
-            <input id="answer" type="radio" name="group3" value="wrong"> Petey<br>
-            <input id="answer" type="radio" name="group3" value="correct" >Josh y Petey<hr>
-
-<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+      <input id="answer" type="radio" name="group1" value="text">Be a professional developer<br>
+      <input id="answer" type="radio" name="group1" value="text">Run startup<br>
+      <input id="answer" type="radio" name="group1" value="text">Build something fun<br>
+      <input id="answer" type="radio" name="group1" value="text">Have another skill<br>
 
 
-          <button type="submit" class="btn">Show me the story!</button>
-        </form>
+      <div class="question">What Sort of Developer Do You Want to Be?</div>
 
+      <input id="answer" type="radio" name="group2" value="text">Game<br>
+      <input id="answer" type="radio" name="group2" value="text">Web<br>
+      <input id="answer" type="radio" name="group2" value="text">Mobile<br>
+      <input id="answer" type="radio" name="group2" value="text">Desktop Software<br>
 
+      <div class="question">What do you find more interesting?</div>
 
+      <input id="answer" type="radio" name="group3" value="text">User Interface:how to interact with things<br>
+      <input id="answer" type="radio" name="group3" value="text">Logic:how things work<br>
 
+      <div class="question2">What Type of Companies Do You Want to Work For?</div>
 
+      <input id="answer" type="radio" name="group2" value="text">Small Business/Freelance<br>
+      <input id="answer" type="radio" name="group2" value="text">Startups<br>
+      <input id="answer" type="radio" name="group2" value="text">Traditional Enterprises<br>
+      <input id="answer" type="radio" name="group2" value="text">No Preference<br>
 
+      <div class="question2">What Do You Care More About?</div>
 
-
-
-
-
+      <input id="answer" type="radio" name="group2" value="text">Job Oppurtunities<br>
+      <input id="answer" type="radio" name="group2" value="text">Just Practice Programming<br>
 
 
 
+      <!-- <button class="submit" onclick="return handleClick();" type="submit">Submit</button> -->
 
 
+      <button type="submit" class="btn btn-success">View Your Results!</button>
+    </form>
 
-
-
-
-
+    
 
 
 
@@ -106,7 +105,28 @@
 
 
 
-    </div>
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
 </html>
