@@ -1,3 +1,10 @@
+body{
+  font-family: sans-serif;
+
+}
+
+
+
 .nav{
   float: right;
   max width:653px;
@@ -8,4 +15,16 @@
 p{
   font-size: 15px;
   font-family: sans-serif;
+}
+.results{
+  padding:
+}
+
+.btn btn-success{
+  text-align: center;
+  padding:3px;
+  width:200px;
+}
+.question{
+  font-size: 15px;
 }
