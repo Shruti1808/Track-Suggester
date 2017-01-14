@@ -8,7 +8,7 @@ $(document).ready(function() {
     var question5Answer =$("input:radio[name=group5]:checked").val();
 
 
-    ($("input:radio[name=group1]:checked").val(){
+
       if(question1Answer===developer || question1Answer===skill || question1Answer===startup){
         console.log($("#results.option1.option2").show());
         else if(question1Answer===fun) {
@@ -42,5 +42,42 @@ $(document).ready(function() {
 
 
         }
-      }
+
     });
+
+
+
+
+    $("button#quiz").click(function() {
+
+    $("button.question2").hide();
+    $("button.question3").hide();
+    $("button.question4").hide();
+    $("button.question5").hide();
+  });
+
+  $("button#quiz").click(function() {
+    $("button.question1").hide();
+    $("button.question3").hide();
+    $("button.question4").hide();
+    $("button.question5").hide();
+
+  });
+
+  $("button#quiz").click(function() {
+    $("button.question1").hide();
+    $("button.question2").hide();
+    $("button.question4").hide();
+    $("button.question5").hide();;
+
+    $("button#quiz").click(function() {
+      $("button.question1").hide();
+      $("button.question2").hide();
+      $("button.question3").hide();
+      $("button.question5").hide();;
+
+      $("button#quiz").click(function() {
+        $("button.question1").hide();
+        $("button.question2").hide();
+        $("button.question3").hide();
+        $("button.question4").hide();;
