@@ -1,12 +1,46 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    var answer1 =$("input:radio[name=group]:checked").val();
-    var answer2 =$("input:radio[name=group]:checked").val();
-    var answer3 =$("input:radio[name=group]:checked").val();
-    var answer4 =$("input:radio[name=group]:checked").val();
+    var question1Answer =$("input:radio[name=group1]:checked").val();
+    var question2Answer =$("input:radio[name=group2]:checked").val();
+    var question3Answer =$("input:radio[name=group3]:checked").val();
+    var question4Answer =$("input:radio[name=group4]:checked").val();
+    var question5Answer =$("input:radio[name=group5]:checked").val();
 
 
-    if($("input:radio[name=group]:checked").val()===answerA===answerD")){
-      console.log(.results.option1)
-    }
+    ($("input:radio[name=group1]:checked").val(){
+      if(question1Answer===developer || question1Answer===skill || question1Answer===startup){
+        console.log($("#results.option1.option2").show());
+        else if(question1Answer===fun) {
+          console.log($("#results.option3").show());
+        }
+        if(question2Answer===game|| question2Answer===web || question2Answer===mobile){
+          console.log($("#results.option1 .option2").show());
+          else if (question2Answer===desktop){
+            console.log($("#results.option4").show());
+          }
+        if(question3Answer ===userinterface){
+          console.log($("#results.option3").show());
+        }else{
+          console.log($("#results.option1").show());
+        }
+        if(question4Answer === freelance || question4Answer ===startup){
+          console.log($("#results.option2").show());
+        }
+        else if(question4Answer === enterprise){
+          console.log($("#results.option3").show());
+        }else {
+          console.log($("#results.option4").show());
+        }
+        if (question5Answer===job){
+          console.log($("#results.option3").show());
+        }else {
+          console.log($("#results.option1").show());
+        }
+
+        }
+
+
+        }
+      }
+    });
