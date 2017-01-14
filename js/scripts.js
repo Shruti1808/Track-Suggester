@@ -69,15 +69,18 @@ $(document).ready(function() {
     $("button.question2").hide();
     $("button.question4").hide();
     $("button.question5").hide();;
+  });
 
     $("button#quiz").click(function() {
       $("button.question1").hide();
       $("button.question2").hide();
       $("button.question3").hide();
-      $("button.question5").hide();;
+      $("button.question5").hide();
+    });
 
       $("button#quiz").click(function() {
         $("button.question1").hide();
         $("button.question2").hide();
         $("button.question3").hide();
-        $("button.question4").hide();;
+        $("button.question4").hide();
+      });
