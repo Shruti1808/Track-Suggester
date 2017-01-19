@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
   <title> Epicodus Track Suggester</title>
 </head>
@@ -55,38 +55,38 @@
 
         <div class="question1">Why do you want to learn to code?</div>
         <br>
-        <input id="answerA" type="radio" name="group1" value="developer">Be a professional developer<br>
-        <input id="answerB" type="radio" name="group1" value="startup">Run startup<br>
-        <input id="answerC" type="radio" name="group1" value="fun">Build something fun<br>
-        <input id="answerD" type="radio" name="group1" value="skill">Have another skill<br>
+        <input id="answerA" type="radio" name="group1" value="4">Be a professional developer<br>
+        <input id="answerB" type="radio" name="group1" value="3">Run startup<br>
+        <input id="answerC" type="radio" name="group1" value="1">Build something fun<br>
+        <input id="answerD" type="radio" name="group1" value="2">Have another skill<br>
         <br>
 
         <div class="question2">What Sort of Developer Do You Want to Be?</div>
         <br>
-        <input id="answerA" type="radio" name="group2" value="game">Game<br>
-        <input id="answerB" type="radio" name="group2" value="web">Web<br>
-        <input id="answerC" type="radio" name="group2" value="mobile">Mobile<br>
-        <input id="answerD" type="radio" name="group2" value="desktop">Desktop Software<br>
+        <input id="answerA" type="radio" name="group2" value="1">Game<br>
+        <input id="answerB" type="radio" name="group2" value="4">Web<br>
+        <input id="answerC" type="radio" name="group2" value="2">Mobile<br>
+        <input id="answerD" type="radio" name="group2" value="3">Desktop Software<br>
         <br>
 
         <div class="question3">What do you find more interesting?</div>
         <br>
-        <input id="answerA" type="radio" name="group3" value="userinterface">User Interface:how to interact with things<br>
-        <input id="answerB" type="radio" name="group3" value="logic">Logic:how things work<br>
+        <input id="answerA" type="radio" name="group3" value="1">User Interface:how to interact with things<br>
+        <input id="answerB" type="radio" name="group3" value="2">Logic:how things work<br>
         <br>
 
         <div class="question4">What Type of Companies Do You Want to Work For?</div>
         <br>
-        <input id="answerA" type="radio" name="group4" value="freelance">Small Business/Freelance<br>
-        <input id="answerB" type="radio" name="group4" value="startup">Startups<br>
-        <input id="answerC" type="radio" name="group4" value="enterprise">Traditional Enterprises<br>
-        <input id="answerD" type="radio" name="group4" value="none">No Preference<br>
+        <input id="answerA" type="radio" name="group4" value="2">Small Business/Freelance<br>
+        <input id="answerB" type="radio" name="group4" value="3">Startups<br>
+        <input id="answerC" type="radio" name="group4" value="4">Traditional Enterprises<br>
+        <input id="answerD" type="radio" name="group4" value="1">No Preference<br>
         <br>
 
         <div class="question5">What Do You Care More About?</div>
         <br>
-        <input id="answerA" type="radio" name="group5" value="job">Job Oppurtunities<br>
-        <input id="answerB" type="radio" name="group5" value="practice">Just Practice Programming<br>
+        <input id="answerA" type="radio" name="group5" value="2">Job Oppurtunities<br>
+        <input id="answerB" type="radio" name="group5" value="1">Just Practice Programming<br>
         <br>
         <!-- <button class="submit" onclick="return handleClick();" type="submit">Submit</button> -->
 
@@ -95,22 +95,24 @@
     </div>
 
     <div id="results">
-      <div class="row">
-        <div class="option1 col-md-8">
-           <h2>"Java:One of the Most Practical Languages to Learn"</h2>
-          <p>
-            Java is a popular language particularly for enterprise companies, used by 90% of the Fortune 500 companies. When startups begin to scale or need better performance, Java is often the language that they’ll use. Java developers are in high demand in comparison to other programmers, according to Indeed.com, and its community is expected to continue to grow.
-          </p>
+      <div class="java">
+        <h3><span class="result"></span> We highly suggest you check out:</h3>
+        <h2>"Java:One of the Most Practical Languages to Learn"</h2>
+        <p>
+          Java is a popular language particularly for enterprise companies, used by 90% of the Fortune 500 companies. When startups begin to scale or need better performance, Java is often the language that they’ll use. Java developers are in high demand in comparison to other programmers, according to Indeed.com, and its community is expected to continue to grow.
+        </p>
 
-        </div>
-        <div class="option2 col-md-8">
-          <h2>"PHP"</h2>
-          <p>
-            Many entrepreneurs and small business owners turn to content management systems like Wordpress to quickly build a website and publish content. Creating Wordpress sites require knowledge of PHP, thus popularizing the usage of PHP in recent years. If you’re looking to build an eCommerce sites, then PHP is an easy and fast way to do it.
-          </p>
-        </div>
       </div>
-      <div class="option3 col-md-8">
+      <div class="php">
+        <h3><span class="result"></span> We highly suggest you check out:</h3>
+        <h2>"PHP"</h2>
+        <p>
+          Many entrepreneurs and small business owners turn to content management systems like Wordpress to quickly build a website and publish content. Creating Wordpress sites require knowledge of PHP, thus popularizing the usage of PHP in recent years. If you’re looking to build an eCommerce sites, then PHP is an easy and fast way to do it.
+        </p>
+      </div>
+
+      <div class="html">
+        <h3><span class="result"></span> We highly suggest you check out:</h3>
         <h2>"HTML CSS and Javascript:For Jumping Right in and Building Websites"</h2>
         <p>
           JavaScript has become an essential language of the web, as it is implemented by all browsers and allows you to build interactive websites. You must learn JavaScript if you want to get into web development, and the language is pretty easy to get started with.
@@ -118,18 +120,16 @@
 
       </div>
 
-    <div class="option4 col-md-8">
-      <h2>C#</h2>
-      <p>
-        C# is most popular among bigger established businesses, often for building internal software.Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market.If you like the idea of working for a larger company on business software, C# is a great choice.
-      </p>
+      <div class="csharp">
+        <h3><span class="result"></span> We highly suggest you check out:</h3>
+        <h2>C#</h2>
+        <p>
+          C# is most popular among bigger established businesses, often for building internal software.Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market.If you like the idea of working for a larger company on business software, C# is a great choice.
+        </p>
 
+      </div>
     </div>
-    </div>
-
-
   </div>
-</div>
 
 </body>
 </html>
